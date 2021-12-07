@@ -1,0 +1,8 @@
+num_classes: 3
+moving_average_decay: 0
+mixed_precision: false
+label_map: {1: cat, 2: dog}
+image_size: 512x512
+input_rand_hflip: true
+jitter_min: 0.8
+jitter_max: 1.2
