@@ -108,6 +108,9 @@ if [ ! -d "$TF2ODAENV" ] ; then
   cp object_detection/packages/tf2/setup.py .
   python -m pip install .
   
+  # Update from 1.19 to 1.21, else there is an error
+  pip install --upgrade numpy
+  
   echo # Add object detection and slim to python path
   export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
   
