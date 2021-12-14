@@ -53,6 +53,11 @@ if [ ! -d "$EFFDETENV" ] ; then
   
   pip install -r ./$AUTOMLFOLDER/efficientdet/requirements.txt
   
+  pip install onnx-simplifier networkx defusedxml progress requests tf2onnx
+  
+  # Update from 1.19 to 1.21, else there is an error
+  pip install --upgrade numpy
+  
   cd $ROOTFOLDER/automl/efficientdet
   export PYTHONPATH=$PYTHONPATH:`pwd`
   echo New python path $PYTHONPATH

@@ -12,7 +12,7 @@ ENVROOT=../..
 
 source $ENVROOT/venv/effdet_py36/bin/activate
 cd $ENVROOT/automl/efficientdet
-export PYTHONPATH=$PYTHONPATH:`pwd`
+export PYTHONPATH=`pwd`
 echo New python path $PYTHONPATH
 
 cd $PROJECTROOT
